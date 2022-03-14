@@ -42,10 +42,13 @@ This repository is licensed under the MIT license.
 
 ## Screenshots
 
-<!-- ![screen shot note taker #1](public/assets/images/screenshot_1.png?raw=true " note taker screenshot")
-![screen shot note taker #2](public/assets/images/screenshot_2.png?raw=true " note taker screenshot #2")
-![screen shot note taker #3](public/assets/images/screenshot_3.png?raw=true " note taker screenshot #3") -->
+![screen shot employee-tracker](assets/images/screenshot_1.png?raw=true " employee-tracker screenshot")
+![screen shot employee-tracker](assets/images/screenshot_2.png?raw=true " employee-tracker screenshot")
+![screen shot employee-tracker](assets/images/screenshot_3.png?raw=true " employee-tracker screenshot")
+![screen shot employee-tracker](assets/images/screenshot_4.png?raw=true " employee-tracker screenshot")
+![screen shot employee-tracker](assets/images/screenshot_5.png?raw=true " employee-tracker screenshot")
+![screen shot employee-tracker](assets/images/screenshot_6.png?raw=true " employee-tracker screenshot")
 
 ## URL
-
+- Walk through video link: https://watch.screencastify.com/v/Amt2HOusuMu4ZJCDWD57
 - Repo URL https://github.com/SophieQuan/employee-db-tracker.git
