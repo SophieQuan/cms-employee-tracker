@@ -80,7 +80,7 @@ const addDepartment = () => {
                 name: "departmentInput",
                 message: "What is the name of the department?",
                 validate: departmentInput => {
-                    valid = /^[a-zA-Z0-9_ ]{3,}$/.test(departmentInput);
+                    valid = /^[a-zA-Z0-9_ ]{2,}$/.test(departmentInput);
                     return valid ? true : (console.log(" - Please enter a Department Name"), false)
                 }
             }]
@@ -348,7 +348,7 @@ deleteEmployee = () => {
     db.query(mysql, (err, data) => {
         if (err) console.log(err);
 
-        const selectedEmployee = data.map(({ first_name, last_name, id }) => ({ name: first_name + " " + last_name, value: id }));
+        const selectedEmployee = data.map(({ id, first_name, last_name }) => ({ name: first_name + " " + last_name, value: id }));
 
         inquirer.prompt([{
                 type: 'list',
@@ -357,7 +357,7 @@ deleteEmployee = () => {
                 choices: selectedEmployee
             }])
             .then(answer => {
-                const sql = `DELETE FROM role WHERE id = ?`;
+                const sql = `DELETE FROM employee WHERE id = ?`;
 
                 const selectedEmployee = answer.employeeName;
                 db.promise().query(sql, selectedEmployee)
