@@ -386,6 +386,7 @@ const viewBudget = () => {
             console.log(`
                 `)
             console.table(rows);
+            promptUser();
         })
         .catch(console.log)
 };
